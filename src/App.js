@@ -43,7 +43,7 @@ const cardData = [
         description : "Numerous pages during my role as the front-end dev for a fitnesss and nutrition e-com",
         stack : "jQuery / Bootstrap / Sass / PHP",
         image : "",
-        link : "fitera.com",
+        link : "http://fitera.com",
         repo : "",
     },
     {
@@ -51,7 +51,7 @@ const cardData = [
         description : "Complete overhaul and site redeployment",
         stack : "jQuery / Bootstrap",
         image : "",
-        link : "westlinnchorus.org",
+        link : "http://westlinnchorus.org",
         repo : "",
     },
     {
@@ -120,9 +120,9 @@ const useStyles = makeStyles(theme => ({
         display: 'flex',
         flexDirection: 'column',
     },
-    // cardContent: {
-    //     flexGrow: 1,
-    // },
+    cardContent: {
+        flexGrow: 1,
+    },
     footer: {
         padding: theme.spacing(6),
     },
@@ -152,7 +152,9 @@ export default function App() {
                         className={`${classes.wes} ${classes.header} ${classes.nav}`}
                         // onClick={() => handleNavClick('about')} 
                     >
-                        GITHUB
+                        <Link href="https://github.com/ecomstock" target="_blank" color="inherit" underline="none">
+                            GITHUB
+                        </Link>
                     </Typography>
                     <Typography
                         component="h2"
@@ -161,7 +163,9 @@ export default function App() {
                         className={`${classes.wes} ${classes.header} ${classes.nav}`}
                         // onClick={() => handleNavClick('contact')} 
                     >
-                        CONTACT
+                        <Link href="mailto:ecomstock@gmail.com" target="_blank" color="inherit" underline="none">
+                            CONTACT
+                        </Link>
                     </Typography>
                 </Toolbar>
                 <main>
@@ -182,10 +186,14 @@ export default function App() {
                                 </CardContent>
                                 <CardActions>
                                     <Button size="small" color="primary">
-                                        Link
+                                        <Link href={card.link} target="_blank">
+                                            Site
+                                        </Link>
                                     </Button>
                                     <Button size="small" color="primary">
-                                        Repo
+                                        <Link href={card.repo} target="_blank">
+                                            Repo
+                                        </Link>
                                     </Button>
                                 </CardActions>
                             </Card>
