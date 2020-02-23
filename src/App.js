@@ -28,7 +28,8 @@ const cardData = [
         stack : "React / Material-UI / CSS-in-JS",
         image : "",
         link : "",
-        repo : "",
+        repo : "https://github.com/ecomstock/points-office",
+        // disabled : false
     },
     {
         name : "SUNBUDDY",
@@ -36,7 +37,8 @@ const cardData = [
         stack : "React / Material-UI / CSS-in-JS",
         image : "",
         link : "",
-        repo : "",
+        repo : "https://github.com/ecomstock/sunbuddy",
+        disabled : false
     },
     {
         name : "FITERA",
@@ -44,7 +46,8 @@ const cardData = [
         stack : "jQuery / Bootstrap / Sass / PHP",
         image : "",
         link : "http://fitera.com",
-        repo : "",
+        repo : "https://",
+        disabled : false
     },
     {
         name : "WEST LINN COMMUNITY CHORUS",
@@ -52,7 +55,8 @@ const cardData = [
         stack : "jQuery / Bootstrap",
         image : "",
         link : "http://westlinnchorus.org",
-        repo : "",
+        repo : "https://github.com/ecomstock/wlcc",
+        disabled : false
     },
     {
         name : "RETIREROO",
@@ -60,15 +64,17 @@ const cardData = [
         stack : "React / Material-UI / CSS-in-JS",
         image : "",
         link : "",
-        repo : "",
+        repo : "https://github.com/ecomstock/retireroo",
+        disabled: true
     },
     {
         name : "SPECIAL WARDS", // Let's Talk Tokyo, Tokyo Travel Friend, Go Go Tokyo, Special Wards, Tokubetsuku
-        description : "Survey app with detailed, actionable advice for planning a trip to Tokyo (coming soon)",
+        description : "Survey app with detailed, actionable advice for planning a trip to Tokyo",
         stack : "React / Material-UI / CSS-in-JS",
         image : "",
         link : "",
-        repo : "",
+        repo : "https://github.com/ecomstock/special-wards",
+        disabled: true
     },
 ];
 
@@ -185,13 +191,13 @@ export default function App() {
                                     </Typography>
                                 </CardContent>
                                 <CardActions>
-                                    <Button size="small" color="primary">
-                                        <Link href={card.link} target="_blank">
+                                    <Button size="small" color="primary" disabled={card.disabled}>
+                                        <Link href={card.link} target="_blank" color="inherit" underline="none">
                                             Site
                                         </Link>
                                     </Button>
                                     <Button size="small" color="primary">
-                                        <Link href={card.repo} target="_blank">
+                                        <Link href={card.repo} target="_blank" color="inherit" underline="none">
                                             Repo
                                         </Link>
                                     </Button>
