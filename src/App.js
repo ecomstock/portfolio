@@ -23,11 +23,11 @@ function Copyright() {
 
 const cardData = [
     {
-        name : "POINTS OFFICE",
+        name : "POINTS REFERENCE",
         description : "Robust, sortable data app to help travel points enthusiasts maximize redemptions",
         stack : "React / Material-UI / CSS-in-JS",
         link : "https://ecomstock.github.io/points-reference/",
-        repo : "https://github.com/ecomstock/points-office",
+        repo : "https://github.com/ecomstock/points-reference",
         disabled : false
     },
     {
