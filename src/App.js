@@ -26,17 +26,15 @@ const cardData = [
         name : "POINTS OFFICE",
         description : "Robust, sortable data app to help travel points enthusiasts maximize redemptions",
         stack : "React / Material-UI / CSS-in-JS",
-        image : "",
-        link : "",
+        link : "https://ecomstock.github.io/points-reference/",
         repo : "https://github.com/ecomstock/points-office",
-        // disabled : false
+        disabled : false
     },
     {
         name : "SUNBUDDY",
         description : "At-a-glance weather and sun info to optimize outdoor workouts",
         stack : "React / Material-UI / CSS-in-JS",
-        image : "",
-        link : "",
+        link : "https://ecomstock.github.io/sunbuddy/",
         repo : "https://github.com/ecomstock/sunbuddy",
         disabled : false
     },
@@ -59,21 +57,21 @@ const cardData = [
         disabled : false
     },
     {
-        name : "RETIREROO",
+        name : "RETIREROO (coming soon)",
         description : "Financial modeling app to project retirement age and account balances over time",
         stack : "React / Material-UI / CSS-in-JS",
         image : "",
         link : "",
-        repo : "https://github.com/ecomstock/retireroo",
+        repo : "",
         disabled: true
     },
     {
-        name : "SPECIAL WARDS", // Let's Talk Tokyo, Tokyo Travel Friend, Go Go Tokyo, Special Wards, Tokubetsuku
+        name : "SPECIAL WARDS (coming soon)", // Let's Talk Tokyo, Tokyo Travel Friend, Go Go Tokyo, Special Wards, Tokubetsuku
         description : "Survey app with detailed, actionable advice for planning a trip to Tokyo",
         stack : "React / Material-UI / CSS-in-JS",
         image : "",
         link : "",
-        repo : "https://github.com/ecomstock/special-wards",
+        repo : "",
         disabled: true
     },
 ];
@@ -196,7 +194,7 @@ export default function App() {
                                             Site
                                         </Link>
                                     </Button>
-                                    <Button size="small" color="primary">
+                                    <Button size="small" color="primary" disabled={card.disabled}>
                                         <Link href={card.repo} target="_blank" color="inherit" underline="none">
                                             Repo
                                         </Link>
