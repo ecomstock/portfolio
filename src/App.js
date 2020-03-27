@@ -26,7 +26,7 @@ const cardData = [
         name : "POINTS REFERENCE",
         description : "Robust, sortable data app to help travel points enthusiasts maximize redemptions",
         stack : "React / Material-UI / CSS-in-JS",
-        link : "https://ecomstock.github.io/points-reference/",
+        link : "https://points-reference.firebaseapp.com/",
         repo : "https://github.com/ecomstock/points-reference",
         disabled : false
     },
@@ -44,7 +44,7 @@ const cardData = [
         stack : "jQuery / Bootstrap / Sass / PHP",
         image : "",
         link : "http://fitera.com",
-        repo : "https://",
+        repo : "",
         disabled : false
     },
     {
