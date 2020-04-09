@@ -26,7 +26,7 @@ const cardData = [
         name : "POINTS REFERENCE",
         description : "Robust, sortable data app to help travel points enthusiasts maximize redemptions",
         stack : "React / Material-UI / CSS-in-JS",
-        link : "https://points-reference.firebaseapp.com/",
+        link : "pointsreference.com/",
         repo : "https://github.com/ecomstock/points-reference",
         disabled : false
     },
